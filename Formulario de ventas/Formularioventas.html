@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de ventas</title>
+
+    <!-- CSS -->
+<link href="/Formulario de ventas/bootstrap-5.2.0-beta1-dist/css/bootstrap.min.css" rel="stylesheet" >
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-primary">
+        <div class="container">
+          <img src="/Formulario módulo de ventas/Imagenes/sistem.jpg" width="60px">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Ventas</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Catálogo
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Colección 2020</a></li>
+                  <li><a class="dropdown-item" href="#">Colección 2021</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Colección 2022</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link">Información de contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/nuevo form/colorlib-regform-34/index.html" target="_blank">Registro/Ingresar</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form" type="search" placeholder="Buscar">
+              <button class="btn btn-primary" type="submit">Ir</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <br>
+
+    <div class="container">
+        <h1>Formulario de ventas</h1>
+    </div>
+
+    <br><br><br><br>
+
+    <form>
+
+        <div class="container"> 
+            <label for="nombres" class="control-label">Nombres</label>
+            <input type="text" class="form-control" id="nombres" name="nombres" placeholder="" required>
+        </div> 
+        
+        <div class="container"> 
+            <label for="apellidos" class="control-label">Apellidos</label>
+            <input type="text" class="form-control" id="apellidos" name="apellidos" placeholder="" required>
+        </div> 
+    
+        <div class="container"> 
+            <label for="celular" class="control-label">Celular</label>
+            <input type="tel" class="form-control" id="celular" name="celular" placeholder="" required>
+        </div> 
+
+        <div class="container"> 
+            <label for="correo" class="control-label">Correo electrónico</label>
+            <input type="email" class="form-control" id="correo" name="correo" placeholder="" required>
+        </div> 
+
+        <div class="container"> 
+            <label for="direccion" class="control-label">Dirección</label>
+            <input type="text" class="form-control" id="direccion" name="direccion" placeholder="" required>
+        </div>                    
+                                   
+    
+        <div class="container"> 
+            <label for="ciudad" class="control-label">Ciudad</label>
+            <input type="text" class="form-control" id="ciudad" name="ciudad" placeholder="" required>
+        </div>                                    
+                                
+        <div class="container"> 
+            <label for="localidad" class="control-label">Localidad</label>
+            <select class="form-control" id="localidad">
+                <option value="US">Usaquén</option>
+                <option value="CH">Chapinero</option>
+                <option value="SF">Santa Fe</option>
+                <option value="SC">San Cristóbal</option>
+                <option value="UM">Usme</option>
+                <option value="TJ">Tunjuelito</option>
+                <option value="BS">Bosa</option>
+                <option value="KN">Kennedy</option>
+                <option value="FT">Fontibón</option>
+                <option value="EG">Engativá</option>
+                <option value="SB">Suba</option>
+                <option value="BU">Barrios Unidos</option>
+                <option value="TQ">Teusaquillo</option>
+                <option value="MT">Mártires</option>
+                <option value="AN">Antonio Nariño</option>
+                <option value="PA">Puente Aranda</option>
+                <option value="LC">La Candelaria</option>
+                <option value="RU">Rafael Uribe Uribe</option>
+                <option value="CB">Ciudad Bolivar</option>
+            </select>                    
+        </div>
+        
+    </form>
+    <br>
+    <form action="#" class="credit-card-div">
+        <div class="panel panel-default" >
+         <div class="panel-heading">
+             
+              <div class="container ">
+                      <div class="col-md-12">
+                          <input type="text" class="form-control" placeholder="Nombre de la tarjeta" />
+                      </div>
+                  </div>
+             <div class="container ">
+                      <div class="col-md-3 col-sm-3 col-xs-3">
+                          <span class="help-block text-muted small-font" >Mes de expiración</span>
+                          <input type="text" class="form-control" placeholder="MM" />
+                      </div>
+                 <div class="col-md-3 col-sm-3 col-xs-3">
+                          <span class="help-block text-muted small-font" >Año de expiración</span>
+                          <input type="text" class="form-control" placeholder="AA" />
+                      </div>
+                <div class="col-md-3 col-sm-3 col-xs-3">
+                          <span class="help-block text-muted small-font" >  CCV</span>
+                          <input type="number" class="form-control" placeholder="CCV" />
+                      </div>
+                 <div class="col-md-3 col-sm-3 col-xs-3">
+        <img src="/Formulario de ventas/Imagenes/ccv.jpg" width="250px"class="img-rounded" />
+                 </div>
+                  </div>
+                  <br>
+             <div class="container">
+                      <div class="col-md-12 pad-adjust">
+        
+                          <input type="text" class="form-control" placeholder="Ingrese el número de la tarjeta">
+                      </div>
+                  </div>
+                  <br><br>
+             <div class="Container">
+        <div class="col-md-12 pad-adjust">
+            <div class="container">
+            <label>
+              <input type="checkbox" checked class="text-muted">Guardar detalles para pagos rápidos<a href="#"> Aprender cómo...</a>
+            </label>
+          </div>
+          <br><br><br>
+        </div>
+             </div>
+               <div class="Container ">
+                    <div class="container">
+                         <input type="submit"  class="btn btn-danger" value="CANCELAR" />
+                      </div>
+                      <br>
+                      <div class="container">
+                          <input type="submit"  class="btn btn-warning btn-block" value="PAGAR AHORA" />
+                      </div>
+                      <br>
+                      <div class="container"> 
+                        <button type="submit" class="btn btn-primary">Buy!</button>
+                    </div>     
+                    
+                  </div>
+             
+                           </div>
+                      </div>
+        </form>
+
+    <!-- JavaScript -->
+<script src="/Formulario de ventas/bootstrap-5.2.0-beta1-dist/js/bootstrap.min.js" ></script>
+    
+
+
+</body>
+</html>
